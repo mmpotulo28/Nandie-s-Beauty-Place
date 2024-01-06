@@ -10,7 +10,10 @@
  <body>
   <header>
    <nav class="main-nav">
-    <ul class="nav-logo"></ul>
+    <ul class="nav-logo">
+        <img src="./assets/img/logo-pink.png" alt="">
+        <h1>Nandie's Beauty Place</h1>
+    </ul>
     <ul class="nav-items">
      <li class="nav-item">Home</li>
      <li class="nav-item">About</li>
@@ -23,14 +26,14 @@
 
   <main>
    <!-- slideshow section -->
-   <section id="slideshow">
+   <section class="body-section" id="slideshow">
     <div class="slide-box">
      <img src="./assets/img/logo-pink.png" alt="" class="slide-img" id="1" />
      <img src="./assets/img/logo-pink.png" alt="" class="slide-img" id="1" />
     </div>
    </section>
    <!-- about me card -->
-   <section class="about">
+   <section class="body-section" id="about">
     <div class="about-card">
      <div class="about-image">
       <img src="./assets/img/logo-pink.png" alt="profile image" />
@@ -53,7 +56,7 @@
    </section>
 
    <!-- gallery section -->
-   <section id="gallery">
+   <section class="body-section" id="gallery">
     <h1 class="section-heading">Gallery</h1>
     <div class="section-body">
      <div class="gallery-images">
@@ -125,12 +128,75 @@
     </div>
    </section>
    <!-- pricelist section -->
-   <section id="pricelist">
+   <section class="body-section" id="pricelist">
     <h1 class="section-heading">Pricelist</h1>
+    <div class="section-body">
+     <!-- plice list table -->
+        <div class="price-list">
+        <table>
+        <thead>
+            <tr>
+            <th>Hair Service</th>
+            <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Service 1</td>
+            <td>R100</td>
+            </tr>
+            <tr>
+            <td>Service 2</td>
+            <td>R100</td>
+            </tr>
+            <tr>
+            <td>Service 3</td>
+            <td>R100</td>
+            </tr>
+            <tr>
+            <td>Service 4</td>
+            <td>R100</td>
+            </tr>
+            <tr>
+            <td>Service 5</td>
+            <td>R100</td>
+            </tr>
+            <tr>
+            <td>Service 6</td>
+            <td>R100</td>
+            </tr>
+            <tr>
+            <td>Service 7</td>
+            <td>R100</td>
+            </tr>
+            <tr>
+            <td>Service 8</td>
+            <td>R100</td>
+            </tr>
+            <tr>
+            <td>Service 9</td>
+            <td>R100</td>
+            </tr>
+            <tr>
+            <td>Service 10</td>
+            <td>R100</td>
+            </tr>
+            <tr>
+            <td>Service 11</td>
+            <td>R100</td>
+            </tr>
+            <tr>
+            <td>Service 12</td>
+            <td>R100</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
    </section>
 
    <!-- contact section -->
-   <section id="contacts">
+   <section class="body-section" id="contacts">
     <h1 class="section-heading"><i class="fa fa-address-card"></i>Contact</h1>
     <div class="section-content">
      <div class="contact-card">
@@ -180,8 +246,10 @@
      </div>
     </div>
    </section>
-  </main>
 
+  </main>
+<footer>
+</footer>
   <script src="./assets/js/main.js"></script>
   <!-- import fontawesome icons -->
   <script

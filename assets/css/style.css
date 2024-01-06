@@ -24,7 +24,7 @@
  max-height: 50px;
  overflow: hidden;
  flex-direction: row;
- justify-content: center;
+ justify-content: space-between;
  padding: 0 50px;
  border-radius: 0 0 10px 10px;
  box-shadow: 0px 3px 7px 0px var(--sec-color);
@@ -37,6 +37,7 @@
  justify-content: center;
  align-items: center;
  gap: 10px;
+ position: relative;
 }
 
 .main-nav .nav-items .nav-item {
@@ -59,7 +60,24 @@
  box-shadow: 5px 0px 0px 0px var(--sec-color);
 }
 
-section {
+.main-nav .nav-logo {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ max-height: 50px;
+ width: fit-content;
+ text-wrap: nowrap;
+ justify-content: center;
+ align-items: center;
+ gap: 10px;
+ color: var(--sec-color);
+}
+
+.main-nav .nav-logo img {
+ max-width: 50px;
+}
+
+.body-section {
  display: block;
  width: fit-content;
  margin: 20px auto;
@@ -160,7 +178,13 @@ section {
 }
 
 /* gallery */
+#gallery {
+ background: linear-gradient(var(--sec-color) 1%, var(--prim-color), white);
+}
 
+#gallery .section-body {
+ background: transparent;
+}
 .gallery-images {
  display: flex;
  flex-direction: row;
@@ -199,6 +223,7 @@ section {
 
 /* contact section */
 #contacts {
+ max-width: 95% !important;
  margin-top: 20px;
  border-top: 2px solid var(--sec-color);
  border-bottom: none;
@@ -217,6 +242,7 @@ section {
  padding: 20px;
  width: calc(100%-40px);
  gap: 20px;
+ max-width: 95% !important;
 }
 
 .contact-heading {
@@ -235,12 +261,15 @@ section {
  gap: 10px;
  /* align-items: center; */
  justify-content: flex-start;
+ text-wrap: wrap;
 }
 
 .contact-form {
  display: flex;
  justify-content: center;
  flex-direction: column;
+ max-width: 95% !important;
+ overflow: hidden;
 }
 
 .contact-form .form-group {
@@ -276,6 +305,13 @@ section {
 .contact-form .form-group textarea {
  border-radius: 10px;
  padding: 10px;
+ max-height: 150px;
+ max-width: 410px;
+ /* height: 50px !important; */
+ min-width: 200px;
+ min-height: 50px;
+ height: fit-content;
+ text-overflow: clip;
 }
 
 .contact-info {
@@ -284,6 +320,7 @@ section {
  padding-right: 20px;
  flex-direction: column;
  padding: 0 10px;
+ flex-wrap: wrap;
 }
 
 .contact-card .social-media-content {
@@ -315,11 +352,70 @@ section {
  margin-right: 5px;
 }
 
+/* pricelist  */
+.price-list {
+ display: block;
+ width: 100%;
+}
+
+.price-list table {
+ display: table;
+ width: 90%;
+ border-collapse: collapse;
+ border: 2px solid var(--sec-color);
+ margin: auto;
+ max-height: 500px;
+ max-width: 500px;
+ min-width: 200px;
+ overflow: hidden;
+}
+
+.price-list table thead tr {
+ background-color: var(--sec-color);
+}
+
+.price-list table thead tr th {
+ padding: 5px 10px;
+ color: black;
+}
+
+.price-list table tbody {
+ display: table-row-group;
+}
+.price-list table tbody tr:nth-child(odd) {
+ background-color: rgb(253, 196, 241);
+}
+
+.price-list table tbody tr td {
+ padding: 3px 10px;
+ color: black;
+}
+
 /* media query */
+
+/* tab scree */
 @media (max-width: 800px) {
+ .main-nav .nav-items {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden !important;
+  vertical-align: top;
+  background-color: var(--sec-color);
+ }
+
+ .main-nav {
+  overflow: visible !important;
+ }
+
+ .main-nav .nav-items:focus {
+  overflow: visible !important;
+  height: fit-content !important;
+ }
  .contact-card {
   display: grid;
   grid-template-columns: 1fr;
+  max-width: 100% !important;
+  text-wrap: wrap;
  }
 
  .contact-card .contact-info {
@@ -343,7 +439,57 @@ section {
   text-align: left;
  }
 
+ .about-card .about-image {
+  margin: auto;
+ }
+
  .main-footer .contact {
   display: none;
  }
+}
+
+/* mobile screen */
+@media (max-width: 560px) {
+ .body-section {
+  width: 95% !important;
+ }
+
+ #contacts {
+  max-width: 100% !important;
+ }
+ .gallery-images {
+  display: block !important;
+ }
+ .gallery-img-box {
+  display: block !important;
+  width: 90% !important;
+  max-width: 100% !important;
+  aspect-ratio: 1/1 !important;
+  border: none !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+  margin: 5px auto !important;
+  background-color: var(--sec-color);
+  border-radius: 10px;
+ }
+
+ .gallery-img-box img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  aspect-ratio: 1/1 !important;
+  border: none !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+  margin: 5px auto !important;
+  border-radius: 10px;
+ }
+
+ .price-list table {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: auto !important;
+ }
+
+ /* main nav */
 }
