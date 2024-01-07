@@ -353,6 +353,12 @@
 }
 
 /* pricelist  */
+#pricelist {
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ justify-content: center;
+}
 .price-list {
  display: block;
  width: 100%;
@@ -368,10 +374,12 @@
  max-width: 500px;
  min-width: 200px;
  overflow: hidden;
+ box-shadow: 5px 5px 7px 0 var(--tet-color);
 }
 
 .price-list table thead tr {
  background-color: var(--sec-color);
+ border-bottom: 4px solid var(--tet-color);
 }
 
 .price-list table thead tr th {
@@ -391,6 +399,29 @@
  color: black;
 }
 
+/* foooter */
+.main-footer {
+ display: flex;
+ position: relative;
+ height: fit-content;
+ padding: 20px 10px;
+ background-color: var(--prim-color);
+ flex-direction: row;
+ justify-content: space-evenly;
+}
+
+.main-footer a {
+ color: var(--sec-color);
+ font-weight: bold;
+}
+
+.main-footer .copyright-sec {
+ display: flex;
+ flex-direction: row;
+ gap: 20px;
+ justify-content: space-evenly;
+}
+
 /* media query */
 
 /* tab scree */
@@ -401,15 +432,6 @@
   overflow: hidden !important;
   vertical-align: top;
   background-color: var(--sec-color);
- }
-
- .main-nav {
-  overflow: visible !important;
- }
-
- .main-nav .nav-items:focus {
-  overflow: visible !important;
-  height: fit-content !important;
  }
  .contact-card {
   display: grid;
@@ -442,16 +464,12 @@
  .about-card .about-image {
   margin: auto;
  }
-
- .main-footer .contact {
-  display: none;
- }
 }
 
 /* mobile screen */
 @media (max-width: 560px) {
  .body-section {
-  width: 95% !important;
+  width: 90% !important;
  }
 
  #contacts {
