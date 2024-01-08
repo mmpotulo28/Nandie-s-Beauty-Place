@@ -43,6 +43,7 @@
  .main-nav .nav-items:hover {
   height: fit-content !important;
   overflow: visible !important;
+  z-index: 3;
  }
 
  .main-nav .nav-items:hover > .dropdown-icon {
