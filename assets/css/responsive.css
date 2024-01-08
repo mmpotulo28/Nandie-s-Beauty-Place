@@ -47,11 +47,11 @@
 
  .main-nav .nav-items:hover > .dropdown-icon {
   display: none;
-  content: '.';
  }
 
  .main-nav .nav-items:hover > .nav-item {
   display: flex;
+  width: 200px !important;
  }
 
  .main-nav .nav-items .nav-item:nth-child(1) {
