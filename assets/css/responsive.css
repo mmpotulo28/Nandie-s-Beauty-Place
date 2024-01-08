@@ -90,6 +90,10 @@
  .about-card .about-image {
   margin: auto;
  }
+
+ .image-expanded {
+  min-width: 90vw;
+ }
 }
 
 /* mobile screen */
