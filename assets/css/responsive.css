@@ -1,0 +1,138 @@
+/* tab scree */
+@media (max-width: 800px) {
+ .main-nav {
+  height: 50px !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-inline: 10px;
+  width: 96%;
+  z-index: 1;
+  max-height: 50px;
+  overflow: visible;
+  align-items: start;
+ }
+
+ main {
+  margin-top: 70px;
+ }
+
+ .main-nav .nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100%;
+  align-items: center !important;
+  overflow: hidden !important;
+  margin-right: 10px;
+ }
+
+ .main-nav .nav-items .dropdown-icon {
+  display: block;
+ }
+
+ .main-nav .nav-items .nav-item {
+  display: none;
+  height: 20px !important;
+  background-color: var(--prim-color);
+  border-bottom: 4px solid var(--sec-color);
+  border-radius: 10px;
+  min-width: 80px;
+ }
+
+ .main-nav .nav-items:hover {
+  height: fit-content !important;
+  overflow: visible !important;
+ }
+
+ .main-nav .nav-items:hover > .dropdown-icon {
+  display: none;
+  content: '.';
+ }
+
+ .main-nav .nav-items:hover > .nav-item {
+  display: flex;
+ }
+
+ .main-nav .nav-items .nav-item:nth-child(1) {
+  border: none;
+ }
+
+ .contact-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 100% !important;
+  text-wrap: wrap;
+ }
+
+ .contact-card .contact-info {
+  border-right: none;
+  border-bottom: 2px solid var(--sec-color);
+  padding-bottom: 30px;
+ }
+
+ .contact-card .contact-info .social-media-content {
+  border-top: none;
+ }
+
+ .contact-card .contact-form button {
+  display: block;
+  margin: 20px auto;
+ }
+
+ .about-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+ }
+
+ .about-card .about-image {
+  margin: auto;
+ }
+}
+
+/* mobile screen */
+@media (max-width: 560px) {
+ .body-section {
+  width: 90% !important;
+ }
+
+ #contacts {
+  max-width: 100% !important;
+ }
+ .gallery-images {
+  display: block !important;
+ }
+ .gallery-img-box {
+  display: block !important;
+  width: 90% !important;
+  max-width: 100% !important;
+  aspect-ratio: 1/1 !important;
+  border: none !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+  margin: 5px auto !important;
+  background-color: var(--sec-color);
+  border-radius: 10px;
+ }
+
+ .gallery-img-box img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  aspect-ratio: 1/1 !important;
+  border: none !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+  margin: 5px auto !important;
+  border-radius: 10px;
+ }
+
+ .price-list table {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: auto !important;
+ }
+
+ /* main nav */
+}
