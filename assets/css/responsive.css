@@ -133,11 +133,16 @@
   margin: 5px auto !important;
   border-radius: 10px;
  }
-
+.price-list{
+    height: fit-content !important;
+    max-width: fit-content !important;
+}
  .price-list table {
   width: 100% !important;
-  max-width: 100% !important;
+  max-width: fit-content !important;
   overflow: auto !important;
+
+  margin-bottom: auto !important;
  }
 
  /* main nav */

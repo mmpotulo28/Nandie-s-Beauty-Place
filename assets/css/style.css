@@ -231,7 +231,7 @@ a {
 
 .gallery-img-box img:hover {
  transform: scale(0.9);
- transition: transform 0.5s ease-in-out;
+ transition: transform 0.3s ease-in-out;
 }
 
 .image-expanded {
@@ -260,7 +260,6 @@ a {
 .image-expanded .expanded-img-block {
  display: flex;
  justify-content: center;
- /* align-items: center; */
  max-height: 80%;
  width: auto;
  height: auto;
@@ -494,10 +493,14 @@ a {
  background-color: rgb(253, 196, 241);
 }
 .price-list table tbody tr:hover {
- /* scale: 1.1; */
  background-color: var(--sec-color);
- font-weight: bold;
 }
+
+.price-list table tbody tr:hover > td:nth-child(2) {
+    font-weight: bold;
+}
+
+
 .price-list table tbody tr td {
  padding: 3px 10px;
  color: black;
