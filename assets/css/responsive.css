@@ -33,6 +33,7 @@
 
  .main-nav .nav-items .nav-item {
   display: none;
+  position: relative;
   height: 20px !important;
   background-color: var(--prim-color);
   border-bottom: 4px solid var(--sec-color);
@@ -52,7 +53,7 @@
 
  .main-nav .nav-items:hover > .nav-item {
   display: flex;
-  width: 200px !important;
+  width: 150px !important;
  }
 
  .main-nav .nav-items .nav-item:nth-child(1) {
@@ -92,7 +93,7 @@
  }
 
  .image-expanded {
-  min-width: 90vw;
+  min-width: 80vw;
  }
 }
 
@@ -140,4 +141,25 @@
  }
 
  /* main nav */
+ .main-nav .nav-items {
+  width: fit-content !important;
+  overflow: visible !important;
+  margin-right: 10px;
+  align-items: flex-start !important;
+ }
+ .main-nav .nav-items .nav-item {
+  position: relative;
+  margin-right: 50px !important;
+  transition: all 0.2s ease-in-out !important;
+  width: 50px !important;
+ }
+
+ .main-nav .nav-items .nav-item:hover {
+  display: block !important;
+  /* width: max-content !important; */
+  justify-content: flex-start !important;
+  margin-right: 50px !important;
+  border-radius: 10px;
+  width: 120px !important;
+ }
 }
